@@ -1,0 +1,560 @@
+/*need to go through and */
+
+/*combine like selectors and organize based on top down inside out*/
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+	background-image: url("../images/background.jpg");
+	background-size: cover; 
+	max-width: 1400px;
+}
+
+.page {
+	width: 960px;
+	margin: auto;
+	box-shadow: 0 0 25px -5px rgba(0,0,0,.2);
+}
+
+.owl-content {
+	text-align: center;
+	height: 500px;
+	padding-top: 100px;
+	/*background-color: rgba(255, 255, 255, 0.7);*/
+	border-radius: 30px;
+	margin: 25px;
+	font-size: 42px;
+	/*box-shadow: 0 0 25px -5px rgba(0,0,0,.2);*/
+
+
+}
+
+.pantry.container {
+	background-color: #F8F8F8;
+} 
+
+.all-ingredients {
+	width: 100%;
+}
+
+button.add-to-pantry {
+	margin-top: 3px;
+	outline: none; 
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(191, 23, 12,.6);
+    font-weight: 700;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(134, 0, 0,.9), 0px 1px 2px rgba(0,0,0,.7);
+	width: 100%;
+	text-align: center;
+	transition: all .1s ease;
+}
+
+button.add-to-pantry:active {
+    box-shadow: 0px 0px 0px rgba(134, 0, 0,.9), 0px 1px 1px rgba(0,0,0,.9);
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+    outline: none;
+}
+
+ul.ingredients_list {
+	height: 413px;
+	overflow: scroll;
+	padding: 3px;
+	list-style-type: none;
+	margin-top: 8px;
+	border-radius: 4px;
+	box-shadow: 0 0 11px -2px rgba(0,0,0,.3);
+}
+	  
+ul.ingredients_list li {
+	margin: 2px 1px;
+	padding: 1px 5px;
+	/*background-color: #eee; */
+	border-radius: 3px;
+	border-bottom: 1px solid #ccc;
+	font-size: 10pt;
+	/*-webkit-box-shadow: 0 0 11px -7px #000000;*/
+	/*box-shadow: 0 0 11px -7px #000000;*/
+	overflow: hidden;
+}
+	  
+ul.ingredients_list li button {
+	padding-left: 5px;
+	color: #FF0000;
+	background-color: transparent;
+	border: none;
+	outline: none; 
+	float: right;
+}
+
+ul.ingredients_list button:hover {
+	color: #8C0000;
+}
+
+ul.ingredients_list li a {
+	text-decoration: none; 
+	color: #00DA00;
+	margin-top: 5px;
+	padding: 0 5px 0 5px;
+	float: right;
+}
+
+ul.ingredients_list li a:hover {
+	color: #006400;
+}
+
+header {
+	min-height: 150px;
+	position: relative;
+	overflow: hidden;
+	background: rgba(255,255,255,.25);
+}
+header nav {
+	border-top: 1px solid rgba(111, 111, 111, 0.6);
+	border-bottom: 1px solid rgba(111, 111, 111, 0.6);
+	display: inline-block;
+	padding: 10px 10px;
+	margin-top: 85px;
+}
+header nav a {
+	padding: 10px 10px; 
+	text-decoration: none; 
+	color: #664823; 
+	font-weight: bold;
+}
+header nav a:hover {
+	color: whitesmoke; 
+}
+
+/**********************************/
+/* Login message and login screen */
+/**********************************/
+.owl-carousel h1 {
+	color:#231B1B;
+	font-family: 'Tahoma';
+	color: rgb(0, 137, 2);
+	font-weight: 100;
+	text-shadow: 2px 1px rgba(0, 0, 0, 1);
+
+}
+
+.home_login {
+	background-color: white; 
+	border-radius: 5px; 
+	text-align: center;
+	box-shadow: 0 0 11px -2px rgba(0,0,0,.3);
+	padding-top: 15px;
+	width: 300px;
+	min-height: 250px;
+	margin: 0 auto; 
+}
+
+ .create_user, .create_user_error_message {
+ 	width: 300px;
+ 	min-height: 150px;
+ 	margin: 0 auto;
+ 	text-align: center;
+  	padding: 5px;
+ }
+
+.home_login a {
+	color: green;
+	clear: left;
+	margin: 10px;
+}
+
+.home_login form, .create_user form {
+	display: block;
+	/*float: left;*/
+}
+.home_login button, .create_user button {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	outline: none; 
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(191, 23, 12,.6);
+    font-weight: 700;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(134, 0, 0,.9), 0px 1px 2px rgba(0,0,0,.7);
+	width: 100px;
+	text-align: center;
+	transition: all .1s ease;
+}
+
+button.home_login:active {
+    box-shadow: 0px 0px 0px rgba(134, 0, 0,.9), 0px 1px 1px rgba(0,0,0,.9);
+    position: relative;
+    top: 1px;
+    text-decoration: none;
+    outline: none;
+}
+.home_login label, .create_user label {
+    display: block;
+    float: left;
+    clear: left;
+    width: 80px;
+    padding: 5px;
+}
+.home_login input, .create_user input {
+  display: block;
+  float: left;
+  padding: 1px;
+  margin: 5px;
+}
+.create_user_error_message {
+  width: 600px;
+  background-color: white;
+  border-radius: 5%;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.login_fail {
+  background-color:white;
+  border-radius: 5px;
+  position: absolute;
+  right:230px;
+  top:185px;
+  width:250px;
+  height:165px;
+  padding:10px;
+  text-align: center;
+
+}
+
+.login_message {
+	background-color: white; 
+	margin: 0 auto; 
+	border-radius: 5px;
+	width: 350px;
+	text-align: center;
+	margin-top: 50px;
+	box-shadow: 0 0 11px -2px rgba(0,0,0,.3);
+}
+
+.create_user {
+	background-color: white; 
+	border-radius: 5px; 
+}
+
+.create_user form > div {
+	overflow: hidden;
+}
+
+.login_message h2, .login_message p {
+	padding: 10px;
+}
+
+img.logo {
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+}
+.nav-left {
+	float: left;
+	margin-left: 5px;
+}
+.nav-right {
+	float: right;
+	margin-right: 5px;
+}
+.login {
+	position: absolute;
+	top: 10px; 
+	right: 10px;
+}
+
+main {
+	min-height: 540px;
+	margin-top: 50px;
+	padding-top: 20px;
+	background: rgba(255,255,255,.25);
+}
+
+.ingredients.container {
+
+	margin-left: 15px;
+	width: 280px;
+	min-height: 500px;
+	float: left;
+	padding: 5px;
+	/*color: #919191;*/
+}
+
+.recipes {
+	height: 500px;
+	margin-left: 300px;
+	/*background-color: #ECECEE;*/
+	overflow: scroll;
+}
+
+.recipe {
+	width: 200px;
+	display: inline-block;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	background-color: #F8F8F8;
+	vertical-align: top;
+	border-radius: 4px;
+	position: relative;
+	box-shadow: 0 0 11px -2px rgba(0,0,0,.3);
+	text-align: center; 
+	min-height: 256px;
+}
+
+.recipe img {
+	height: 150px;
+	width: 200px;
+	border: 10px solid white; 
+	text-align: center;
+	margin: 0 auto; 
+	box-shadow: 0 0 10px -5px rgba(0, 0, 0, 1);
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.recipe .description {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	left: 10px;
+	height: 130px;
+	color: transparent;
+	background-color: transparent;	
+}
+
+.description:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 55px 10px 0 10px;
+}
+
+
+.recipe h4 { 
+	color: #595959;
+	margin: 0;
+}
+
+.recipe h5 {
+	color: #919191;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	font-family: initial;
+}
+
+footer {
+	margin: 0 auto; 
+	text-align: center; 
+	min-height: 50px;
+}
+
+
+.recipe-details {
+	margin: 0 10px;
+	padding: 1px;
+}
+
+.recipe-details {
+	margin-top: 5px;
+	padding-left: 5px;
+	/*border-radius: 5px;*/
+	/*box-shadow: 0 0 10px -5px rgba(0, 0, 0, 1);*/
+}
+
+.recipe-details h1, .recipe-details h3, .recipe-details p {
+	background-color: white; 
+	padding-left: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+
+.recipe-details p:last-child {
+	margin-bottom: 5px;
+}
+
+.recipe-details img {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin:5px;
+	opacity: 100%;
+	border-radius: 5px;
+	border: 10px solid white; 
+	box-shadow: 0 0 10px -5px rgba(0, 0, 0, 1);
+}
+
+.recipe-details > *:not(:first-child) {
+	margin-left: 320px;
+}
+
+/********************/
+/* Newsletter section
+/********************/
+
+.newsletter {
+	padding: 5px;
+	margin: 0 10px; 
+}
+
+.newsletter h1, .newsletter h3,.newsletter p {
+	background-color: white; 
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 5px;
+}
+
+.newsletter p {
+	margin-top: -6px;
+}
+
+
+/*********************/
+/* Grocery List Page */
+/*********************/
+
+.grocery_list_container {
+	padding: 5px;
+	margin: 0 10px; 
+	min-height: 300px;
+	border-radius: 7px;
+}
+
+.grocery_list_container h3, h4 {
+	padding: 10px 0 0 10px;
+}
+
+
+.grocery_list_container aside {
+	width: 300px; 
+	height: 500px;
+	float: left;
+	border-radius: 7px;
+	background-color: #F8F8F8;
+	box-shadow: 0 0 11px -2px rgba(0,0,0,.3);
+	overflow: scroll;
+}
+
+.grocery_list_container div {
+	margin-left: 310px;
+	height: 500px;
+	border-radius: 7px;
+	background-color: #F8F8F8;
+	box-shadow: 0 0 11px -2px rgba(0,0,0,.3);
+}
+
+ul.grocery_list {
+	padding: 3px;
+	list-style-type: none;
+	border-radius: 4px;
+}
+	  
+ul.grocery_list li {
+	margin: 2px 1px;
+	padding: 1px 3px;
+	border-radius: 3px;
+	border-bottom: 1px solid #ccc;
+	font-size: 10pt;
+}
+	  
+ul.grocery_list li button {
+	padding-left: 5px;
+	color: #FF0000;
+	background-color: transparent;
+	border: none;
+	outline: none; 
+	float: right;
+}
+
+ul.grocery_list button:hover {
+	color: #8C0000;
+}
+
+ul.grocery_list li a {
+	text-decoration: none;
+	color: #888;
+	padding-right: 5px;
+}
+
+ul.grocery_list li a:hover {
+	color: #000;
+}
+
+
+/***********************/
+/* Contact Us Section */
+/***********************/
+
+.contact {
+	background-color: white; 
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.contact h1, .contact p, .contact h3 {
+	/*background-color: white; */
+	padding: 5px;
+	margin: 15px 5px; 
+}
+
+.contact a {
+	text-decoration: none; 
+}
+
+/*****************/
+/* About Us Page */
+/*****************/
+
+.about {
+	background-color: white; 
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.about h1, .about p {
+	background-color: white; 
+	border-radius: 5px;
+	padding: 5px;
+	margin: 15px 5px; 
+}
+
+/**************/
+/* Deals Page */
+/**************/
+
+.deals, .no-recipes {
+	background-color: white;
+	border-radius: 5px;
+	margin: 15px 10px;
+	padding: 5px;
+}
+
+.no-recipes {
+	margin-top: 0;
+}
+
+.empty {
+	color: lightgray;
+	text-align: center;
+	margin-top: 25px;
+}

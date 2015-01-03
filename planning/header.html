@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<style>
+
+		header {
+			width: 960px;
+			margin: 0 auto; 
+			position: relative;
+			background-color: #ccc;
+		}
+		header nav {
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000; 
+			display: inline-block;
+			padding: 10px 10px;
+			margin-top: 85px;
+		}
+		header nav a {
+			padding: 10px 10px; 
+			text-decoration: none; 
+			color: #000; 
+		}
+		header nava:hover {
+			color: white; 
+			background-color: #000;
+		}
+		img.logo {
+			width: 300px;
+			height: 150px;
+			position: absolute;
+			left: 50%;
+			margin-left: -150px;
+		}
+		.nav-left {
+			float: left;
+		}
+		.nav-right {
+			float: right;
+		}
+		.login {
+			position: absolute;
+			top: 10px; 
+			right: 10px;
+		}
+	
+	</style>
+</head>
+<body>
+	<header>
+		<img src="/logo_transparent.png" class="logo">
+		<nav class="nav-left">
+			<a href="#">Dashboard</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact Us</a>
+		</nav>
+		<nav class="nav-right">
+			<a href="#">Newsletter</a>
+			<a href="#">Grocery List</a>
+			<a href="#">Deals</a>
+		</nav>
+		<div class="login">
+			Hi {user} <a href="#">Logout</a>
+		</div>
+	</header>
+</body>
+</html>
